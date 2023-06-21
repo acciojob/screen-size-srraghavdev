@@ -1,11 +1,10 @@
 //your JS code here. If required.
-const widthref= document.querySelector("h1:first-child")
-const heightref= document.querySelector("h1:last-child")
+const widthref= document.getElementsByTagName("h1")[0]
+const heightref= document.getElementsByTagName("h1")[1]
 addEventListener("resize",(event)=>{
 	let width=event.target.innerWidth
 	let height=event.target.innerHeight
 	widthref.innerText="Width:"+width
+	console.log(widthref)
 	heightref.innerText="Height:"+height
-
-
 })
